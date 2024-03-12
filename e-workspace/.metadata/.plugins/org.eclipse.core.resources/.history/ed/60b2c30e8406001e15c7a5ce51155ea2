@@ -1,0 +1,15 @@
+public class ThrowException2 {
+
+	public static void main(String[] args) 
+	{
+		f();
+		System.out.println("This is main()");
+	}
+	
+	static void f() 
+	{
+		Exception ex; = new Exception();
+		throw ex;
+	}
+
+}

@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Practice16 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		String input;
+		do {
+			System.out.print("당신의 입력 (가위/바위/보) : ");
+			input = sc.next();
+		} while (!input.equals("그만")); 
+		
+	}
+
+}

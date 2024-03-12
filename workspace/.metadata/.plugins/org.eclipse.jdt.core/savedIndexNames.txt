@@ -1,0 +1,4 @@
+INDEX VERSION 1.132+C:\Users\윤상아\OneDrive\바탕 화면\객지2과제\workspace\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2667203440.index
+1490169252.index

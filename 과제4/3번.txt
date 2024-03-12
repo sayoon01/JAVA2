@@ -1,0 +1,47 @@
+package Chapter10;
+
+import java.awt.FlowLayout;
+import java.awt.Font;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+
+public class Chapter10_6 extends JFrame{
+	JLabel label; 
+	Chapter10_6(){
+		setTitle("클릭 연습용 응용프로그램"); // 제목 지정
+		setLayout(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		label= new JLabel("Love Java");
+		label.setSize(100,50);
+		label.setLocation(50,50);
+		label.addMouseListener(new MyMouseAdapter());
+		
+		
+		add(label);
+		setSize(500,500);
+		setVisible(true);
+		label.requestFocus();
+		
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Chapter10_6();
+	}
+	
+	class MyMouseAdapter extends MouseAdapter{
+		int x,y;
+		public void mousePressed(MouseEvent e) {
+			x = (int)(Math.random()*400); // 여백
+			y = (int)(Math.random()*400); // 여백
+			label.setLocation(x,y);
+		}
+	}
+}

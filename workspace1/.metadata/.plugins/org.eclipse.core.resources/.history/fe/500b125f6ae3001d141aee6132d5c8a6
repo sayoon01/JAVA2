@@ -1,0 +1,22 @@
+
+public class Date {
+	int year;
+	
+	protected boolean isReap()
+	{
+		if(year%4 == 0)
+			return true;
+		if(year%100 == 0)
+			return false;
+		if(year%400 == 0)
+			return true;
+	}
+	
+	public String testReapYears()
+	{
+		if(isReap()==true)
+			return "" +year + "¿∫ ¿±≥‚¿‘¥œ¥Ÿ.";
+		else
+			return "" + year + "¿∫ ¿±≥‚¿Ã æ∆¥’¥œ¥Ÿ.";
+	}
+}

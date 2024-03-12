@@ -1,0 +1,21 @@
+
+public class MiniProject {
+
+	public static void main(String[] args) {
+		Dice d1 = new Dice();
+		Dice d2 = new Dice();
+		
+		int count=1;
+		d1.roll();
+		int num1 = d1.getValue();
+		d2.roll();
+		int num2 = d2.getValue();
+		
+		
+		while(d1.getValue()!=d2.getValue())
+		{
+			
+		}
+	}
+
+}

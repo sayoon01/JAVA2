@@ -1,0 +1,18 @@
+import java.lang.ArithmeticException;
+
+public class PrintException1 {
+
+	public static void main(String[] args) {
+		try {
+			int a = 100 / 0;
+		}
+		catch (ArithmeticException ex) {
+			System.out.println(ex); // <- 예외 객체 print String 자동 호출
+		}
+		finally {
+			System.out.println("finally block");
+		}
+		System.out.println("End of main");
+	}
+
+}

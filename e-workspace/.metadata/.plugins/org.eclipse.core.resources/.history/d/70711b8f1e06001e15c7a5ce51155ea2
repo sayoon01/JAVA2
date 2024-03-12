@@ -1,0 +1,7 @@
+
+public class quotient {
+	public static int quotient(int a, int b) throws ArithemeticExcpetion
+	{
+		return a/b;
+	}
+}

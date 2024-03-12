@@ -1,0 +1,32 @@
+import java.io.*;
+
+public class ChainedException {
+
+	public static void main(String[] args) {
+		try {
+			f();
+		}
+		catch (Exception ex) {
+			System.out.print("main():");
+			ex.printStackTrace();
+		}
+	}
+	
+	static void f() throws Exception 
+	{
+		try {
+			g();
+		}
+		catch(IOException ex) { // <- 이전 객체에 대한 것, 연결
+			                   // 이전에 발생한 예외를 확인할 수 있음
+			Exception ex2 = new Exception(ex);
+			throw ex2;ㅎ
+		}
+	}
+	
+	static void g() throws IOException
+	{
+		IOException ex = new IOException();
+		throw ex;
+	}
+}
